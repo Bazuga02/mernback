@@ -12,6 +12,10 @@ app.use("/api/v2", TaskAPI);
 
 const PORT = process.env.PORT || 1000;
 
+app.get("/",(req,res)=>{
+  res.send("Hello Baby");
+})
+
 app.listen(PORT, () => {
   console.log("Server started");
 });
